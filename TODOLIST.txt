@@ -1,0 +1,4 @@
+1.- Cambiar la vista de la pagina Home.blade
+2.- Modificar la barra superior y laterial del programa
+3.- Crear una manera de consultar los reportes
+4.- que aparezcan los reportes en consultar reportes

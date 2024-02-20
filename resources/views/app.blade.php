@@ -137,11 +137,11 @@
           <!-- Brand Logo -->
           <a href="{{asset('/home')}}" class="brand-link">
             <img src="{{ url('images/AdminLTELogo.png') }}" alt="baessh" class="brand-image img-circle elevation-3" style="opacity: .8">
-            <span class="brand-text font-weight-light">Proyecto base</span>
+            <span class="brand-text font-weight-light">Reporte Incidencias</span>
           </a>
 
           <!-- Sidebar -->
-          <div class="sidebar">
+          <div class="sidebar" style="color: black;">
             <!-- Sidebar user panel (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
               <div class="image">
