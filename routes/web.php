@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AlumnoController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\IncidenciaController;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 /*
@@ -46,6 +47,8 @@ Route::group(['middleware' => ['admin', 'role:admin']], function() {
     Route::get('alumno/materias', [AlumnoController::class, 'materias']);
     Route::get('generarQR', [AlumnoController::class, 'generaQR']);
     Route::get('prueba',[AlumnoController::class, 'prueba']);
+    Route::get('RegistrarIncidencia',[IncidenciaController::class, 'RegistrarIncidencia']);
+    Route::post('GuardarIncidencia',[IncidenciaController::class, 'GuardarIncidencia']);
 });
 
 Route::group(['prefix' => 'alumno','middleware' => ['alumno', 'role:alumno']], function() {
